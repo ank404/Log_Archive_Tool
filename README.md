@@ -44,5 +44,3 @@ For example, to archive logs from the /var/log directory:
 ./archive_logs.sh /var/log
 ```
 This will archive all files in the /var/log directory, create a backup in the log_backups folder, and log the action in archive_log.txt.
-
-PROJECT URL: https://roadmap.sh/projects/log-archive-tool
