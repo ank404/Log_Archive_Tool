@@ -18,34 +18,31 @@ This project provides a Bash script designed to archive log files from a specifi
 First, clone this repository to your local machine:
 ```bash
 git clone https://github.com/your-username/log-archiver-script.git
+
 cd log-archiver-script
+```
 
-
-2. Make the Script Executable
+### 2. Make the Script Executable
 
 Ensure the script is executable:
-
+```bash
 chmod +x archive_logs.sh
+```
 
-3. Run the Script
+### 3. Run the Script
 
 Run the script, specifying the path to the directory where your log files are stored:
-
+```bash
 ./archive_logs.sh /path/to/log-directory
-
+```
 Replace /path/to/log-directory with the actual directory containing the logs you wish to archive.
 
-Example
+### Example
 
 For example, to archive logs from the /var/log directory:
-
+```bash
 ./archive_logs.sh /var/log
-
-This command will:
-
-    Archive all files in the /var/log directory.
-    Create a compressed file with a timestamp in the name, like logs_archive_20231114_153045.tar.gz.
-    Move the archive to a log_backups folder in the current directory.
-    Log this action in archive_log.txt with the date and time.
+```
+This will archive all files in the /var/log directory, create a backup in the log_backups folder, and log the action in archive_log.txt.
 
 PROJECT URL: https://roadmap.sh/projects/log-archive-tool
